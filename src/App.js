@@ -1,4 +1,5 @@
 /**
+ * package install: npm install ethers
  * flow test của contract (file erc721test.sol)
  * hard code, mint NFT id=1 cho account address 0x7dF0E91495a750e460B445700C49a423058b2b6B ở function mintNftHandler
  * getOnwerNftHandler trả về owner của NFT id=1, ban đầu là 0x7dF0E91495a750e460B445700C49a423058b2b6B
@@ -6,6 +7,8 @@
  * mở trang web ở chế độ ví account address khác (ví 2) để bấm buy button
  * buyNftHandler có truyền vào NFT id cần mua và value = price NFT
  * getOnwerNftHandler lại để kiểm tra onwer
+ * *******
+ * vì contract đang config đã mint NFT ID=1 nên sẽ báo lỗi nếu mint tiếp, đổi ID thành các số khác để test nhé em yêu 2,3,4,5,6,7,8
  */
 import './App.css';
 import {useEffect, useState} from "react";
